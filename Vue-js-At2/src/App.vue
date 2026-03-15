@@ -12,15 +12,15 @@ export default defineComponent({
       products: [
         {
           id: 1,
-          name: 'Produto 1',
+          name: 'Brinquedo',
           price: 15.0,
-          category: { id: 1, title: 'Categoria 1' }
+          category: { id: 1, title: 'Infantil' }
         },
         {
           id: 2,
-          name: 'Produto 2',
+          name: 'Camiseta',
           price: 32.50,
-          category: { id: 2, title: 'Categoria 2' }
+          category: { id: 2, title: 'Roupas' }
         }
       ] as Product[]
     };
@@ -56,7 +56,7 @@ export default defineComponent({
         <li v-for="item in cart.items" :key="item.product.id" class="cart-item">
           <span class="item-name">{{ item.product.name }}</span>
           <span class="item-details">
-            {{ item.quantity }}x - R$ {{ (item.product.price * item.quantity).toFixed(2) }}
+            ({{ item.quantity }}x) - R$ {{ (item.product.price * item.quantity).toFixed(2) }}
           </span>
           <div class="item-actions">
             <button @click="decreaseQuantity(item.product.id)">-</button>
