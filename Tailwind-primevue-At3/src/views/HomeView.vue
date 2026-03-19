@@ -1,7 +1,7 @@
 <template>
   <main class="min-h-[calc(100vh-6rem)]">
-    <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6">
-      <!-- Product Gallery -->
+    <div class="flex flex-col gap-10">
+    
       <section>
         <h2 class="text-xl font-semibold mb-4">Produtos</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -14,7 +14,7 @@
         </div>
       </section>
 
-      <!-- Cart -->
+    
       <aside class="bg-white rounded-2xl p-6 shadow-lg">
         <h2 class="text-xl font-semibold mb-4">Carrinho</h2>
 
